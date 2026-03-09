@@ -9,7 +9,8 @@ async def get_client() -> NotebookLMClient:
     """Get or create the NotebookLM client (lazy singleton)."""
     global _client
     if _client is None:
-        _client = await NotebookLMClient.from_storage()
+        client = await NotebookLMClient.from_storage()
+        _client = await client.__aenter__()
     return _client
 
 
