@@ -1,0 +1,35 @@
+{
+  "notebook_id": "bb1eb2a9-9d7f-4db3-8b5b-ae323d80196d",
+  "notebook_title": "notebooklm-mcp 프로젝트 문서",
+  "tracked_patterns": [
+    "README.md",
+    "CLAUDE.md",
+    "docs/**/*.md"
+  ],
+  "sources": {
+    "README.md": {
+      "source_id": "e5318d37-6021-4478-b6b6-0d813c95975e",
+      "content_hash": "b7dfe0eb933174637f680049107ed6f8"
+    },
+    "design-plan.md": {
+      "source_id": "6537ef7f-d25f-4419-bea1-30188e3754e5",
+      "content_hash": "unknown"
+    },
+    "pyproject.toml": {
+      "source_id": "9b47e65d-4b2e-4f49-818e-93ffce55631b",
+      "content_hash": "unknown"
+    },
+    "server.py": {
+      "source_id": "96d336f2-30df-4c41-8254-a358b05ccb6e",
+      "content_hash": "unknown"
+    },
+    "tools/artifacts.py": {
+      "source_id": "7dd00a81-68cb-415c-8d4b-c223e9a4e405",
+      "content_hash": "unknown"
+    },
+    "docs/plans/2026-03-09-notebooklm-mcp-design.md": {
+      "source_id": "89dc7002-64b4-4ad2-a48d-de18b3730f1c",
+      "content_hash": "b1ad1586d0d36533ae22b6e453ed55a8"
+    }
+  }
+}
