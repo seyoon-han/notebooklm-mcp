@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "notebooklm-mcp"
+version = "0.1.0"
+description = "MCP server wrapping notebooklm-py for Claude Code, Codex, and other MCP clients"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "notebooklm-py>=0.3.0",
+    "mcp[cli]>=1.0.0",
+]
+
+[project.optional-dependencies]
+browser = ["notebooklm-py[browser]>=0.3.0"]
+dev = ["pytest", "pytest-asyncio"]
+
+[project.scripts]
+notebooklm-mcp = "notebooklm_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/notebooklm_mcp"]
